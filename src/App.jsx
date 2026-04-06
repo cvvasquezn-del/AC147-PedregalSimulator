@@ -186,8 +186,8 @@ export default function AC147Simulator() {
               formatter={(val, name) => [`${val}°C`, name === "t" ? "Temp" : "Setpoint"]}
             />
             <ReferenceLine x={idx} stroke={chapter.color} strokeWidth={1.5} strokeOpacity={0.6} />
-            <Line type="monotone" dataKey="s" stroke="#3b82f6" dot={false} strokeWidth={1.5} strokeDasharray="5 3" name="Setpoint" />
-            <Line type="monotone" dataKey="t" stroke="#f59e0b" dot={false} strokeWidth={2} name="Temperature" />
+            <Line type="monotone" dataKey="s" stroke="#3b82f6" dot={false} strokeWidth={1.5} strokeDasharray="5 3" name="Setpoint" isAnimationActive={false} />
+            <Line type="monotone" dataKey="t" stroke="#f59e0b" dot={false} strokeWidth={2} name="Temperature" isAnimationActive={false} />
           </LineChart>
         </ResponsiveContainer>
       </div>
